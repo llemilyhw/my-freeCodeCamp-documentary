@@ -1,0 +1,391 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>original Trombones</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/a91366bd85.js" crossorigin="anonymous"></script>
+</head>
+<header id="header">
+  <img id="header-img" src="https://product-landing-page.freecodecamp.rocks/">
+  <nav id="nav-bar">
+    <a class="nav-link" href="#table">Features</a>
+    <a class="nav-link" href="#video">How It Works</a>
+    <a class="nav-link" href="#plan">Pricing</a>
+  </nav>
+</header>
+<body>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <h1 class="slogan">Handcrafted, home-made masterpieces</h1>
+    <input id="email" class="email-box" type="email" placeholder="Enter your email address" name="email">
+    <input 
+    id="submit" type="submit" value="GET STARTED">
+  </form>
+  <section id="table">
+    <div class="table" id="table-1">
+     <i id="icons" class="fa-solid fa-fire-flame-curved fa-3x"></i>
+     <div class="table-text">
+        <h2 class="table_h2">Premium Materials</h2>
+      <p class="table_p">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+</p>
+      </div>
+    </div>
+    <div class="table" id="table-2">
+     <i id="icons" class="fa-solid fa-truck fa-3x"></i>
+     <div class="table-text">
+      <h2 class="table_h2">Fast Shipping</h2>
+      <p class="table_p">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </div>
+    </div>
+    <div class="table" id='table-3'>
+     <i id="icons" class="fa-solid fa-battery-full fa-3x"></i>
+     <div class="table-text">
+        <h2 class="table_h2">Quality Assurance</h2>
+      <p class="table_p">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+      </div>
+     </div>
+  </section>
+  <section class="video">
+    <iframe id="video" width="420" height="315" src="https://youtu.be/y8Yv4pnO7qc"></iframe>
+  </section>
+  <section id="plan">
+    <div class="planbox">
+      <div class="p-title">
+        <p>TENOR TROMBONE</p>
+      </div>
+      <div class="p-price">
+        <p>$600</p>
+      </div>
+      <div class="p-text">
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+      </div>
+      <div class="p-select">
+      <input class="select-button" type="submit" value="SELECT">
+      </div>
+    </div>
+    <div class="planbox">
+            <div class="p-title">
+        <p>BASS TROMBONE</p>
+      </div>
+      <div class="p-price">
+        <p>$900</p>
+      </div>
+      <div class="p-text">
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+      </div>
+      <div class="p-select">
+      <input class="select-button" type="submit" value="SELECT">
+      </div>
+    </div>
+    <div class="planbox">
+            <div class="p-title">
+        <p>VALVE TROMBONE</p>
+      </div>
+      <div class="p-price">
+        <p>$1200</p>
+      </div>
+      <div class="p-text">
+        <p>Plays similar to a Trumpet</p>
+        <p>Great for Jazz Bands</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+      </div>
+      <div class="p-select">
+      <input class="select-button" type="submit" value="SELECT">
+      </div>
+    </div>
+  </section>
+  <section id="footer-container">
+  <div id="footer">
+    <nav class="footer">
+      <a class="footer-a" href="">Privacy</a>
+      <a class="footer-a" href="">Terms</a>
+      <a class="footer-a" href="">Contact</a>
+      </nav>
+    <p class="footer-text">
+Copyright 2016, Original Trombones
+    </p>
+  </div>
+  </section>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+background-color: #f2f2f2;
+font-family: Arial, sans-serif;
+color: black
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 30px 50px;
+width: 100%
+}
+
+#header-img{
+  width: 60%
+}
+
+.nav-link{
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+#form{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan{
+  color: black;
+  text-align: center;
+}
+
+.email-box{
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 0.5px solid black;
+  border-radius: 2px;
+  padding: 5.8px;
+  background-color: #ffffff;
+}
+
+#submit{
+  width: 150px;
+  padding: 8px;
+  color: black;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#submit:hover{
+ background-color: #fcae1e;
+ cursor: pointer;
+}
+
+#table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.table{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+
+i{
+  min-width: 100px;
+  text-align: left;
+  color: #ff8b28;
+  padding: 10px;
+}
+
+.table-text{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 300px;
+  padding-left: 20px;
+}
+
+.table_h2{
+  margin: 0;
+  padding: 0;
+}
+
+.table_p{
+  margin-top: 0;
+  padding-top: 1px;
+}
+
+.video{
+  text-align: center;
+}
+
+#plan{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 50px;
+}
+
+.planbox{
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  min-height: 420px;
+  width: 400;
+  height: 420;
+  border: solid 1px black;
+}
+
+p{
+  background-color: transparent;
+}
+
+.p-title{
+  background-color: #d4d4d4;
+  color: black;
+  text-align: center;
+  padding: 1px 80px;
+  font-weight: bold;
+}
+
+.p-price{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
+.p-text{
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.p-select{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 12px;
+}
+
+.select-button{
+  background-color: #ffcc00;
+  font-size: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 2px;
+}
+
+.select-button:hover{
+ background-color: #fcae1e;
+ cursor: pointer;
+}
+
+#footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#footer{
+  display: flex;
+  flex-direction: column;
+ text-align: right;
+  background-color: #d4d4d4;
+  min-width: 00px;
+  width: 900px;
+  padding-top:20px;
+  padding-right: 20px;
+}
+
+.footer{
+  background-color: transparent;
+}
+
+.footer-a{
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.footer-text{
+  margin-top: 10px;
+  color: #555555;
+}
+
+@media only screen and (max-width: 700px){
+
+ header{
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-left: 0;
+   padding-right: 0;
+ }
+
+#header-img{
+  width: auto;
+}
+
+ #nav-bar{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 150px;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+ }
+
+ .nav-link{
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 10px;
+ }
+
+ #form{
+   margin-top: 220px;
+ }
+
+#icons{
+   display: none;
+ }
+
+ .table-text{
+   text-align: center;
+ }
+
+ #plan{
+   flex-direction: column;
+ }
+}
+
+** end of undefined **
+
