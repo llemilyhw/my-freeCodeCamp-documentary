@@ -1,0 +1,333 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/a91366bd85.js" crossorigin="anonymous"></script>
+    <title>Personal Portofolio Webpage</title>
+  </head>
+  <body>
+    <section class="navbar">
+    <div id="navbar-border">
+      <nav id="navbar">
+        <a href="#footer">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    </section>
+    <section id="welcome-section">
+      <h1>Hey I am Mimic</h1>
+      <h2>a web developer</h2>
+    </section>
+    <section id="projects">
+      <div id="h3-border">
+      <h3>These are some of my projects</h3>
+      </div>
+      <div id="project-gallery">
+        <div class="project-tile">
+          <div id="image"></div>
+          <div id="titlebox"><span id="hover"> < </span>Tribute page<span id="hover"> /> </span></div>
+        </div>
+        <div class="project-tile">
+          <div id="image"></div>
+          <div id="titlebox"><span id="hover"> < </span>Random Quote Machine<span id="hover"> /> </span></div>
+        </div>
+        <div class="project-tile">
+          <div id="image"></div>
+          <div id="titlebox"><span id="hover"> < </span>Javascript Calculator<span id="hover"> /> </span></div>
+        </div>
+        <div class="project-tile">
+          <div id="image"></div>
+          <div id="titlebox"><span id="hover"> < </span>Map Data Across the Globe<span id="hover"> /> </span></div>
+        </div>
+        <div class="project-tile">
+          <div id="image"></div>
+          <div id="titlebox"><span id="hover"> < </span>Wikipedia Viewer<span id="hover"> /> </span></div>
+        </div>
+        <div class="project-tile">
+          <div id="image"></div>
+          <div id="titlebox"><span id="hover"> < </span>Tic Tac Toe Game<span id="hover"> /> </span></div>
+        </div>
+      </div>
+    <div>
+      <a href="https://codepen.io/FreeCodeCamp/"><div id="show-all">Show all <i class="fa-solid fa-arrow-right"></i>
+        </div></a>
+    </div>
+    </section>
+    <section id="contact">
+      <h1>Let's work together...</h1>
+      <p id="coffee">How do you take your coffee?</p>
+      <div id="socials">
+        <div class="independent-social" id="s-fb"><i id="icons" class="fa-brands fa-square-facebook"></i>Facebook</div>
+        <div class="independent-social" id="s-github"><a id="profile-link" href="https://github.com/freecodecamp" target="_blank"><i id="icons" class="fa-brands fa-github"></i>GitHub</a></div>
+        <div class="independent-social" id="s-twitter"><i id="icons" class="fa-brands fa-twitter"></i>Twitter</div>
+        <div class="independent-social" id="s-mail"><i id="icons" class="fa-solid fa-at"></i>Send a mail</div>
+        <div class="independent-social" id="s-call"><i id="icons" class="fa-solid fa-mobile-screen-button"></i>Call me</div>
+      </div>
+    </section>
+    <section id="redbar">
+      <div class="red-bar"><div>
+    </section>
+    <section id="footer">
+      <p class="footertext">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+      <p class="footertext"><i id="footericon" class="fa-regular fa-copyright"></i>Created for freeCodeCamp<i id="footericon" class="fa-brands fa-free-code-camp"></i></p>
+    </section>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root{
+  --color-red: #c41e3a;
+  --color-gray: #151c21;
+}
+
+html{
+  font-family: Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 45px;
+background-color: var(--color-red);
+margin: 0;
+}
+
+#navbar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+}
+
+.navbar a{
+text-decoration: none;
+height: 35px;
+color: #ffffff;
+font-size: 23px;
+padding-top: 10px;
+padding-right: 20px;
+padding-left: 20px;
+}
+
+.navbar a:hover{
+  background-color: var(--color-gray);
+}
+
+a{
+text-decoration: none;
+color: #ffffff;
+}
+
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #545454,
+    #151515
+  );
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+h1{
+  display: block;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+h2{
+  display: block;
+  color: var(--color-red);
+  font-weight: 200;
+  font-style: italic;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  margin-top: 0;
+  width: 100%;
+  height: 900px;
+  background-color: #23395d;
+  padding-top: 80px;
+  margin-bottom: 0;
+}
+
+#h3-border{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  border-bottom: 2px solid #ffffff;
+}
+
+h3{
+  font-size: 38px;
+  color: #ffffff;
+  margin: 5px 0;
+  padding: 0;
+}
+
+#project-gallery{
+  margin-top: 50px;
+  display: grid;
+  width: 90%;
+  gap: 50px 35px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 50px;
+}
+
+.project-tile{
+  width: auto;
+  height: auto;
+  border: 1px solid #ffffff;
+}
+
+.project-tile:hover{
+  cursor: pointer;
+}
+
+#image{
+  width: auto;
+  height: 200px;
+}
+
+#titlebox{
+  background-color: var(--color-gray);
+  color: #ffffff;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+span{
+  color: transparent;
+}
+
+.project-tile:hover span{
+  color: #f58216;
+}
+
+#show-all{
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #151c21;;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.fa-solid fa-arrow-right{
+  color: #ffffff;
+}
+
+#show-all:hover{
+  cursor: pointer;
+  background-color: var(--color-red);
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  background-color: var(--color-gray);
+  height: 500px;
+  padding-top: 50px;
+}
+
+#coffee{
+  color: #ffffff;
+  margin-top: 25px;
+  font-style: italic;
+}
+
+#socials{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: #ffffff;
+  font-size: 20px;
+  text-shadow: 0px 2px #000000;
+}
+
+#icons{
+  margin-right: 7px;
+}
+
+.independent-social:hover{
+  transform: translate(0, 10px);
+  transition: transform ease 500ms;
+  cursor: pointer;
+}
+
+#redbar{
+  width: 100%;
+}
+
+.red-bar{
+  background-color: var(--color-red);
+  width: 100%;
+  height: 3px;
+}
+
+#footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: var(--color-gray);
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footericon{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 900px){
+  #projects{
+    height: 1200px;
+  }
+  #project-gallery{
+  grid-template-columns: 1fr 1fr;
+}
+#footer{
+  flex-direction: column;
+}
+
+** end of undefined **
